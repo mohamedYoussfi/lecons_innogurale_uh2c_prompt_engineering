@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Average number of tornado injuries by scale</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Average number of tornado injuries by scale',
+    height: 700,
+    width: 900,
+
+
+};
+
+var trace0 =
+{
+x: [9.868902439024396, 0.34950391384554175, 1.7431424182576636, 57.58321479374109, 0.028935609112881386, 0.10526315789473685, 181.92045454545456],
+y: ["3","1","2","4","0","","5"],
+orientation: 'h',
+xaxis: 'x',
+yaxis: 'y',
+type: 'bar',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>

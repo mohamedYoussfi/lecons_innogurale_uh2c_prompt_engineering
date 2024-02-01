@@ -1,0 +1,34 @@
+{
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "SYSTEM MESSAGE"
+    },
+    {
+      "role": "user",
+      "content": "USER INPUT 1"
+    },
+    {
+      "role": "assistant",
+      "content": "RESPONSE 1"
+    },
+    {
+      "role": "user",
+      "content": "USER INPUT 2 "
+    },
+    {
+      "role": "assistant",
+      "content": "RESPONSE 2"
+    },
+
+    {
+      "role": "user",
+      "content": "USER INPUT"
+    }
+  ],
+  "temperature": 0.5,
+  "max_tokens":500,
+  "top_p":0.95,
+  "frequency_penalty":0
+}

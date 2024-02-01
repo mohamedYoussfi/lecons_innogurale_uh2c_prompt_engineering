@@ -1,0 +1,38 @@
+[
+  {
+    "role": "system",
+    "content": "\nClassify the sentiment ......\n"
+  },
+  {
+    "role": "user",
+    "content": "```please don't rent or even .....```"
+  },
+  {
+    "role": "assistant",
+    "content": "negative"
+  },
+  {
+    "role": "user",
+    "content": "```When I heard that Adrian Pasdar ......```"
+  },
+  {
+    "role": "assistant",
+    "content": "positive"
+  },
+  {
+    "role": "user",
+    "content": "```The acting was bad, the script was bad and .....```"
+  },
+  {
+    "role": "assistant",
+    "content": "negative"
+  },
+  {
+    "role": "user",
+    "content": "```I've just returned from a ......\"```"
+  },
+  {
+    "role": "assistant",
+    "content": "positive"
+  }
+]

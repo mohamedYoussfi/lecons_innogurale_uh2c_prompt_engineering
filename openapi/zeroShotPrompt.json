@@ -1,0 +1,6 @@
+[
+  {
+    "role": "system",
+    "content": "Perform aspect based sentiment analysis on laptop reviews presented in the input delimited by triple backticks, that is, ```.\nIn each review there might be one or more of the following aspects: screen, keyboard, and mousepad.\nFor each review presented as input:\n- Identify if there are any of the 3 aspects (screen, keyboard, mousepad) present in the review.\n- Assign a sentiment polarity (positive, negative or neutral) for each aspect\nArrange your response a JSON object with the following headers:\n- category:[list of aspects]\n- polarity:[list of corresponding polarities for each aspect]}\n"
+  }
+]

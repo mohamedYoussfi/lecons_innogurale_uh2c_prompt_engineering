@@ -1,0 +1,86 @@
+[
+  {
+    "role": "system",
+    "content": "Perform aspect based sentiment analysis on laptop reviews presented in the input delimited by triple backticks, that is, ```.\nIn each review there might be one or more of the following aspects: screen, keyboard, and mousepad.\nFor each review presented as input:\n- Identify if there are any of the 3 aspects (screen, keyboard, mousepad) present in the review.\n- Assign a sentiment polarity (positive, negative or neutral) for each aspect\nArrange your response a JSON object with the following headers:\n- category:[list of aspects]\n- polarity:[list of corresponding polarities for each aspect]}\n"
+  },
+  {
+    "role": "user",
+    "content": "```The GPU is adequate. The camera is average. The software is poor. The keyboard is great.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"gpu\",\"camera\",\"software\",\"keyboard\"],\"polarity\":[\"neutral\",\"neutral\",\"negative\",\"positive\"]}"
+  },
+  {
+    "role": "user",
+    "content": "```The mousepad is decent. The battery is average. The camera is amazing. The screen is disappointing.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"mousepad\",\"battery\",\"camera\",\"screen\"],\"polarity\":[\"neutral\",\"neutral\",\"positive\",\"negative\"]}"
+  },
+  {
+    "role": "user",
+    "content": "```The battery is bad. The keyboard is bad. The screen is great.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"battery\",\"keyboard\",\"screen\"],\"polarity\":[\"negative\",\"negative\",\"positive\"]}"
+  },
+  {
+    "role": "user",
+    "content": "```The mousepad is excellent. The battery is decent.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"mousepad\",\"battery\"],\"polarity\":[\"positive\",\"neutral\"]}"
+  },
+  {
+    "role": "user",
+    "content": "```The mousepad is standard. The keyboard is average. The battery is impressive. The design is disappointing.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"mousepad\",\"keyboard\",\"battery\",\"design\"],\"polarity\":[\"neutral\",\"neutral\",\"positive\",\"negative\"]}"
+  },
+  {
+    "role": "user",
+    "content": "```The camera is standard. The GPU is great. The hardware is excellent. The screen is good.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"camera\",\"gpu\",\"hardware\",\"screen\"],\"polarity\":[\"neutral\",\"positive\",\"positive\",\"positive\"]}"
+  },
+  {
+    "role": "user",
+    "content": "```The keyboard is standard. The RAM is disappointing.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"keyboard\",\"ram\"],\"polarity\":[\"neutral\",\"negative\"]}"
+  },
+  {
+    "role": "user",
+    "content": "```The RAM is amazing. The keyboard is great. The hardware is adequate. The screen is amazing.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"ram\",\"keyboard\",\"hardware\",\"screen\"],\"polarity\":[\"positive\",\"positive\",\"neutral\",\"positive\"]}"
+  },
+  {
+    "role": "user",
+    "content": "```The hardware is good. The screen is impressive. The mousepad is poor. The design is amazing.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"hardware\",\"screen\",\"mousepad\",\"design\"],\"polarity\":[\"positive\",\"positive\",\"negative\",\"positive\"]}"
+  },
+  {
+    "role": "user",
+    "content": "```The mousepad is good. The GPU is fair. The keyboard is good.```\n"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"category\":[\"mousepad\",\"gpu\",\"keyboard\"],\"polarity\":[\"positive\",\"neutral\",\"positive\"]}"
+  }
+]
